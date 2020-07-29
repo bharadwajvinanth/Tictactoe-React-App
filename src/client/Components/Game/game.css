@@ -1,10 +1,17 @@
 .game-container{
     display: flex;
     flex-direction: column;
+    background-color: white;
+    box-shadow: grey;
+    border-radius: 5px;
+    height:500px;
+    width:500px;
 }
 .dropdown-container{
     display: flex;
     flex-direction: row;
+    margin-top: 2px;
+    padding: 5px;
 }
 .board-container{
     display: flex;
@@ -15,11 +22,15 @@
 .player-container{
     display: flex;
     flex-direction: row;
+    height: 20px;
+    padding: 2px;
+    margin: 5px;
 }
 .turn-container{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 20px;
 }
 .ttt-container{
     display: flex;
@@ -29,4 +40,20 @@
 .buttons-container{
     display: flex;
     flex-direction: row;
+}
+.textbox-container{
+    border: 1px solid lightslategray;
+    border-radius: 2px;
+    box-shadow: silver;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #282c34;
+}
+select{
+    text-decoration: none;
+}
+p{
+    color: #282c34;
+    font-size: 14px;
+    padding:2px;
 }

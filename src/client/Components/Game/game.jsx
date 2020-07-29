@@ -5,7 +5,7 @@ import UndoIcon from '@material-ui/icons/Undo';
 import RedoIcon from '@material-ui/icons/Redo';
 import ReplayIcon from '@material-ui/icons/Replay';
 
-class Game extends React.component{
+class Game extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -16,10 +16,10 @@ class Game extends React.component{
 
     };
     render(){
-        return {
+        return (
             <div className="game-container">
                 <div className="dropdown-container">
-                    <select value={this.state.value} onChange={this.handleChange}>
+                    <select value={this.state.difficulty} onChange={this.handleChange}>
                         <option value="Easy">Easy</option>
                         <option value="Medium">Medium</option>
                         <option value="Hard">Hard</option>
@@ -28,10 +28,16 @@ class Game extends React.component{
                 </div>
                 <div className="board-container">
                     <div className="player-container">
+                        <div className="textbox-container">
+                            Player 1
+                        </div>
 
+                        <div className="textbox-container">
+                            Player 2
+                        </div>
                     </div>
                     <div className="turn-container">
-
+                        <p>Turn</p>
                     </div>
                     <div className="ttt-container">
 
@@ -55,7 +61,7 @@ class Game extends React.component{
                     </div>
                 </div>
             </div>
-        }
+        );
     }
 }
 
